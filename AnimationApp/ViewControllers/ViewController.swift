@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                 self.animationIndex = 0
             }
         }
-        (sender as SpringButton).setTitle("\(springAnimations[animationIndex].preset)", for: .normal)
+        (sender as SpringButton).setTitle("\(springAnimations[animationIndex+1].preset)", for: .normal)
         updateLabel()
     }
     private func updateLabel() {

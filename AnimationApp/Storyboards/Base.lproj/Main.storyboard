@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIu-mP-yhy" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="70" y="94" width="274" height="192"/>
+                                <rect key="frame" x="70" y="94" width="274" height="300"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="kFB-Cq-jbR"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iai-W0-H4c" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="194" y="140" width="26" height="100"/>
+                                <rect key="frame" x="194" y="238" width="26.333333333333343" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojY-aY-IyB" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="158" y="464.5" width="98" height="153.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="153.5" id="2vi-Us-ybV"/>
-                                </constraints>
+                                <rect key="frame" x="158" y="464" width="98" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Run animation"/>
                                 <connections>
@@ -41,18 +41,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zIu-mP-yhy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="9ZG-cj-X7j"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="194" id="JmY-to-zJY"/>
-                            <constraint firstItem="ojY-aY-IyB" firstAttribute="top" secondItem="zIu-mP-yhy" secondAttribute="bottom" multiplier="1.1" constant="150" id="QSV-XT-uY1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ojY-aY-IyB" secondAttribute="bottom" constant="244" id="VVd-un-GcE"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerX" secondItem="ojY-aY-IyB" secondAttribute="centerX" id="WvL-Jt-dcY"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerY" secondItem="zIu-mP-yhy" secondAttribute="centerY" id="a1g-i1-bGT"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="aVS-pJ-bfR"/>
-                            <constraint firstItem="zIu-mP-yhy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="iAl-O4-XPE"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQY-Ba-7RU"/>
-                            <constraint firstItem="ojY-aY-IyB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHA-kX-ek3"/>
-                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerX" secondItem="zIu-mP-yhy" secondAttribute="centerX" id="oNR-eA-csg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zIu-mP-yhy" secondAttribute="trailing" constant="70" id="urK-Ze-fCL"/>
+                            <constraint firstItem="ojY-aY-IyB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dg-SA-dm0"/>
+                            <constraint firstItem="ojY-aY-IyB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="1ma-YO-m4S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ojY-aY-IyB" secondAttribute="trailing" constant="158" id="60L-Tx-09B"/>
+                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerY" secondItem="zIu-mP-yhy" secondAttribute="centerY" id="CFq-k6-Bi3"/>
+                            <constraint firstItem="Iai-W0-H4c" firstAttribute="centerX" secondItem="zIu-mP-yhy" secondAttribute="centerX" id="F3w-Fb-mjA"/>
+                            <constraint firstItem="zIu-mP-yhy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="HZC-PE-oGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ojY-aY-IyB" secondAttribute="bottom" constant="368" id="Mg9-pa-B6u"/>
+                            <constraint firstItem="zIu-mP-yhy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ur5-z7-bwU"/>
+                            <constraint firstItem="ojY-aY-IyB" firstAttribute="top" secondItem="zIu-mP-yhy" secondAttribute="bottom" constant="70" id="Zan-Nt-Ag9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zIu-mP-yhy" secondAttribute="trailing" constant="70" id="yEU-Ib-GON"/>
                         </constraints>
                     </view>
                     <connections>
